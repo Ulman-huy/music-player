@@ -1,0 +1,28 @@
+@import './root.css';
+
+.App {
+    height: 100vh;
+    background-color: var(--container-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Finger Paint', cursive;
+}
+.container {
+    height: 90%;
+    width: 95%;
+    border-radius: 25px;
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+.content {
+    display: flex;
+    height: 100%;
+}
+
+a.active{
+    background-color: var(--hover-color);
+}
+a.active span:last-child{
+    display: block;
+}

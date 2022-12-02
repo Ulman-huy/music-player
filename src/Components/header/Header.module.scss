@@ -1,0 +1,96 @@
+@import '../../root.css';
+
+.header {
+    border-bottom: 3px solid var(--primary-color);
+    padding: 12px;
+    position: relative;
+    h1 {
+        text-align: center;
+        color: var(--primary-color);
+        font-size: 36px;
+        margin: -8px 0 16px 0;
+        span {
+            margin-left: 12px;
+        }
+    }
+    .dot {
+        position: absolute;
+        top: 12px;
+        display: flex;
+        div {
+            width: 30px;
+            height: 30px;
+            background-color: var(--primary-color);
+            border-radius: 50px;
+            margin-right: 12px;
+        }
+    }
+    .tools {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4px;
+        &>div {
+            display: flex;
+        }
+        .btn{
+            margin-left: 15px;
+            button {
+                background-color: var(--primary-color);
+                color: var(--bg-color);
+                border: none;
+                font-size: 16px;
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+            .next {
+                margin-left: 16px;
+            }
+        }
+        .views {
+            border-radius: 5px;
+            border: 3px solid var(--primary-color);
+            overflow: hidden;
+            display: flex;
+            margin-left: 120px;
+            button {
+                background-color: var(--bg-color);
+                color: var(--primary-color);
+                border-color: var(--primary-color);
+                border-style: none;
+                font-size: 20px;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+            .slice {
+                height: 100%;
+                width: 3px;
+                background-color: var(--primary-color);
+            }
+        }
+        .search {
+            button {
+                margin-right: 50px;
+                width: 150px;
+                height: 30px;
+                font-size: 16px;
+                color: var(--primary-color);
+                background-color: var(--bg-color);
+                border-radius: 5px;
+                border-color: var(--primary-color);
+                border-style: solid;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}
